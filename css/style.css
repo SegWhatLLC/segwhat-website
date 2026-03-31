@@ -83,6 +83,16 @@ img { max-width: 100%; display: block; }
 }
 .hero-cta { display: flex; gap: 16px; justify-content: center; margin-bottom: 64px; }
 
+/* Featured Product */
+.featured-product {
+    padding: 80px 0; text-align: center;
+    background: linear-gradient(180deg, rgba(255,149,0,0.04) 0%, transparent 100%);
+}
+.featured-product h2 {
+    font-size: clamp(2rem, 5vw, 3.5rem); font-weight: 800; color: #FF9500;
+    margin-bottom: 16px;
+}
+
 /* Hero device frames */
 .hero-screens {
     display: flex; align-items: flex-end; justify-content: center; gap: 32px;
