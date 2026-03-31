@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SegWhat — BlockClock for iOS &amp; Android</title>
+    <meta name="description" content="BlockClock — Real-time Bitcoin network data on your phone, watch, and home screen. Connect your own node or use BlockClock Cloud.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Nav -->
+    <nav class="nav">
+        <div class="nav-inner">
+            <a href="#" class="logo">
+                <img src="images/segwhat-logo.svg" alt="SegWhat" class="logo-icon-img">
+                <span class="logo-text">SegWhat</span>
+            </a>
+            <div class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#themes">Themes</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#download" class="btn btn-small">Download</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-glow"></div>
+        <div class="container">
+            <div class="hero-badge">Now available on iOS &amp; Android</div>
+            <h1>Bitcoin on your wrist.<br>Bitcoin on your screen.</h1>
+            <p class="hero-sub">
+                BlockClock brings real-time Bitcoin network data to your phone,
+                Apple Watch, widgets, and complications. Connect your own node
+                for free — or let BlockClock Cloud handle it.
+            </p>
+            <div class="hero-cta">
+                <a href="#download" class="btn btn-primary">Download BlockClock</a>
+                <a href="#features" class="btn btn-ghost">See Features</a>
+            </div>
+            <div class="hero-screens">
+                <div class="hero-phone">
+                    <div class="phone-frame">
+                        <img src="images/screenshots/dashboard-dark.png" alt="BlockClock Dashboard — Dark Theme" onerror="this.parentElement.classList.add('placeholder')">
+                        <div class="phone-placeholder">
+                            <span class="placeholder-icon">&#x20BF;</span>
+                            <span>Dashboard Screenshot</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-watch">
+                    <div class="watch-frame">
+                        <img src="images/screenshots/watch.png" alt="BlockClock on Apple Watch" onerror="this.parentElement.classList.add('placeholder')">
+                        <div class="watch-placeholder">
+                            <span class="placeholder-icon">&#x231A;</span>
+                            <span>Watch</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats bar -->
+    <section class="stats-bar">
+        <div class="container stats-grid">
+            <div class="stat">
+                <span class="stat-value">Block Height</span>
+                <span class="stat-label">Live tracking</span>
+            </div>
+            <div class="stat">
+                <span class="stat-value">Halving</span>
+                <span class="stat-label">Countdown &amp; progress</span>
+            </div>
+            <div class="stat">
+                <span class="stat-value">Mempool</span>
+                <span class="stat-label">Transaction count &amp; size</span>
+            </div>
+            <div class="stat">
+                <span class="stat-value">Hash Rate</span>
+                <span class="stat-label">Network difficulty</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2>Everything you need.<br>Nothing you don't.</h2>
+            <p class="section-sub">BlockClock surfaces the Bitcoin metrics that matter — beautifully formatted and always up to date.</p>
+
+            <div class="features-grid">
+                <!-- Own Node -->
+                <div class="feature-card feature-highlight">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><circle cx="6" cy="6" r="1"/><circle cx="6" cy="18" r="1"/></svg>
+                    </div>
+                    <h3>Connect Your Own Node</h3>
+                    <p>Point BlockClock at your Bitcoin Core node over your local network. Direct JSON-RPC — no middleman, no subscription, <strong>free forever</strong>.</p>
+                    <div class="feature-tag tag-free">Free</div>
+                </div>
+
+                <!-- Cloud -->
+                <div class="feature-card feature-highlight">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/></svg>
+                    </div>
+                    <h3>BlockClock Cloud</h3>
+                    <p>No node? No problem. BlockClock Cloud delivers the same real-time data with zero setup. <strong>30-day free trial</strong>, then $0.99/month.</p>
+                    <div class="feature-tag tag-cloud">$0.99/mo</div>
+                </div>
+
+                <!-- Watch -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="1" width="12" height="22" rx="4"/><circle cx="12" cy="12" r="5"/></svg>
+                    </div>
+                    <h3>Apple Watch</h3>
+                    <p>Block height on your wrist. Four complication families — circular, rectangular, inline, and corner — show block height, halving progress, epoch supply, and total supply right on your watch face.</p>
+                </div>
+
+                <!-- Widgets -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+                    </div>
+                    <h3>Home &amp; Lock Screen Widgets</h3>
+                    <p>Glance at the block height without opening the app. Small, medium, circular, rectangular, and inline widgets for your home screen and lock screen.</p>
+                </div>
+
+                <!-- Halving -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                    </div>
+                    <h3>Halving Countdown</h3>
+                    <p>Track the next halving with a live progress ring, blocks remaining, estimated time, current and next subsidy. Know exactly where you are in the cycle.</p>
+                </div>
+
+                <!-- Supply -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                    </div>
+                    <h3>Supply Tracker</h3>
+                    <p>Watch the 21 million cap approach in real time. See total BTC issued, remaining supply, epoch minting progress, and subsidy per block.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Themes -->
+    <section id="themes" class="themes">
+        <div class="container">
+            <h2>Four themes. Your style.</h2>
+            <p class="section-sub">BlockClock looks great in any light. Choose from four carefully crafted themes.</p>
+
+            <div class="themes-grid">
+                <div class="theme-card">
+                    <div class="theme-screen">
+                        <img src="images/screenshots/theme-dark.png" alt="Dark theme" onerror="this.parentElement.classList.add('placeholder')">
+                        <div class="theme-placeholder" style="background: #0A0A0A;">
+                            <span class="placeholder-block" style="color: #FF9500;">942,507</span>
+                        </div>
+                    </div>
+                    <span class="theme-name">Dark</span>
+                </div>
+                <div class="theme-card">
+                    <div class="theme-screen">
+                        <img src="images/screenshots/theme-light.png" alt="Light theme" onerror="this.parentElement.classList.add('placeholder')">
+                        <div class="theme-placeholder" style="background: #F2F2F7;">
+                            <span class="placeholder-block" style="color: #FF9500;">942,507</span>
+                        </div>
+                    </div>
+                    <span class="theme-name">Light</span>
+                </div>
+                <div class="theme-card">
+                    <div class="theme-screen">
+                        <img src="images/screenshots/theme-solarized-dark.png" alt="Solarized Dark theme" onerror="this.parentElement.classList.add('placeholder')">
+                        <div class="theme-placeholder" style="background: #002B36;">
+                            <span class="placeholder-block" style="color: #B58900;">942,507</span>
+                        </div>
+                    </div>
+                    <span class="theme-name">Solarized Dark</span>
+                </div>
+                <div class="theme-card">
+                    <div class="theme-screen">
+                        <img src="images/screenshots/theme-solarized-light.png" alt="Solarized Light theme" onerror="this.parentElement.classList.add('placeholder')">
+                        <div class="theme-placeholder" style="background: #FDF6E3;">
+                            <span class="placeholder-block" style="color: #B58900;">942,507</span>
+                        </div>
+                    </div>
+                    <span class="theme-name">Solarized Light</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How it works -->
+    <section class="how-it-works">
+        <div class="container">
+            <h2>Two ways to connect</h2>
+            <p class="section-sub">Use your own Bitcoin node or let us handle the infrastructure.</p>
+
+            <div class="two-col">
+                <div class="col-card">
+                    <div class="col-header">
+                        <span class="col-badge badge-free">Free Forever</span>
+                        <h3>Your Node</h3>
+                    </div>
+                    <ul class="check-list">
+                        <li>Direct JSON-RPC to your Bitcoin Core</li>
+                        <li>Works over local network or Tor</li>
+                        <li>Peer count, chain size, IBD status</li>
+                        <li>Full node details &amp; soft fork info</li>
+                        <li>No account required</li>
+                        <li>Zero data leaves your network</li>
+                    </ul>
+                </div>
+                <div class="col-card col-cloud">
+                    <div class="col-header">
+                        <span class="col-badge badge-cloud">30-Day Free Trial</span>
+                        <h3>BlockClock Cloud</h3>
+                    </div>
+                    <ul class="check-list">
+                        <li>No node setup needed</li>
+                        <li>Data refreshed every 5 minutes</li>
+                        <li>Block height, difficulty, hash rate</li>
+                        <li>Mempool, halving, supply data</li>
+                        <li>$0.99/month after trial</li>
+                        <li>Cancel anytime</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Watch & Widget showcase -->
+    <section class="showcase">
+        <div class="container">
+            <h2>Bitcoin everywhere you look</h2>
+            <p class="section-sub">Complications, widgets, and the full app — block height is never more than a glance away.</p>
+
+            <div class="showcase-grid">
+                <div class="showcase-item">
+                    <div class="showcase-frame showcase-watch">
+                        <img src="images/screenshots/watch-complication.png" alt="Watch complication" onerror="this.parentElement.classList.add('placeholder')">
+                        <div class="showcase-placeholder">
+                            <span class="placeholder-icon">&#x231A;</span>
+                            <span>Complication</span>
+                        </div>
+                    </div>
+                    <h4>Watch Face Complications</h4>
+                    <p>Block height, halving ring, epoch supply, total supply — four complication types in every watch face size.</p>
+                </div>
+                <div class="showcase-item">
+                    <div class="showcase-frame showcase-widget">
+                        <img src="images/screenshots/widget-home.png" alt="Home screen widget" onerror="this.parentElement.classList.add('placeholder')">
+                        <div class="showcase-placeholder">
+                            <span class="placeholder-icon">&#x25A3;</span>
+                            <span>Widget</span>
+                        </div>
+                    </div>
+                    <h4>Home Screen Widgets</h4>
+                    <p>Small and medium widgets show the latest block height right on your home screen.</p>
+                </div>
+                <div class="showcase-item">
+                    <div class="showcase-frame showcase-lock">
+                        <img src="images/screenshots/widget-lock.png" alt="Lock screen widget" onerror="this.parentElement.classList.add('placeholder')">
+                        <div class="showcase-placeholder">
+                            <span class="placeholder-icon">&#x1F512;</span>
+                            <span>Lock Screen</span>
+                        </div>
+                    </div>
+                    <h4>Lock Screen Widgets</h4>
+                    <p>Circular, rectangular, and inline lock screen widgets — check the block height without unlocking.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <h2>Connect to Your Own Node or Use the Cloud</h2>
+            <p class="section-sub">Connect your own node for free. Or use BlockClock Cloud for less than a dollar a month.</p>
+
+            <div class="pricing-grid">
+                <div class="price-card">
+                    <div class="price-header">
+                        <h3>Use Your Own Node</h3>
+                        <div class="price">Free</div>
+                        <span class="price-period">forever</span>
+                    </div>
+                    <ul class="check-list">
+                        <li>All app features</li>
+                        <li>All widgets &amp; complications</li>
+                        <li>All themes</li>
+                        <li>Phone App</li>
+                        <li>Direct node connection</li>
+                    </ul>
+                </div>
+                <div class="price-card price-featured">
+                    <div class="price-popular">Most Popular</div>
+                    <div class="price-header">
+                        <h3>BlockClock Cloud</h3>
+                        <div class="price">$0.99</div>
+                        <span class="price-period">per month</span>
+                    </div>
+                    <ul class="check-list">
+                        <li>Everything in Own Node</li>
+                        <li>No hardware required</li>
+                        <li>Data refreshed every 5 min</li>
+                        <li>30-day free trial</li>
+                        <li>Cancel anytime</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download -->
+    <section id="download" class="download">
+        <div class="container">
+            <h2>Get BlockClock</h2>
+            <p class="section-sub">Available on iOS and Android.</p>
+            <div class="download-buttons">
+                <a href="#" class="store-badge" aria-label="Download on the App Store">
+                    <svg viewBox="0 0 120 40" class="store-svg">
+                        <rect width="120" height="40" rx="6" fill="#000"/>
+                        <text x="60" y="16" text-anchor="middle" fill="#fff" font-size="7" font-family="Inter, sans-serif">Download on the</text>
+                        <text x="60" y="28" text-anchor="middle" fill="#fff" font-size="12" font-weight="600" font-family="Inter, sans-serif">App Store</text>
+                    </svg>
+                </a>
+                <a href="#" class="store-badge" aria-label="Get it on Google Play">
+                    <svg viewBox="0 0 135 40" class="store-svg">
+                        <rect width="135" height="40" rx="6" fill="#000"/>
+                        <text x="67" y="16" text-anchor="middle" fill="#fff" font-size="7" font-family="Inter, sans-serif">GET IT ON</text>
+                        <text x="67" y="28" text-anchor="middle" fill="#fff" font-size="12" font-weight="600" font-family="Inter, sans-serif">Google Play</text>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <img src="images/segwhat-logo.svg" alt="SegWhat" class="logo-icon-img">
+                <span class="logo-text">SegWhat</span>
+            </div>
+            <div class="footer-links">
+                <a href="/privacy">Privacy Policy</a>
+                <a href="/terms">Terms of Service</a>
+                <a href="mailto:hello@segwhat.io">Contact</a>
+            </div>
+            <div class="footer-copy">&copy; 2026 SegWhat. All rights reserved.</div>
+        </div>
+    </footer>
+
+</body>
+</html>
