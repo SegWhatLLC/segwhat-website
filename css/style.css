@@ -183,6 +183,70 @@ img { max-width: 100%; display: block; }
 .tag-free { background: rgba(52, 199, 89, 0.15); color: #34C759; }
 .tag-cloud { background: rgba(255, 149, 0, 0.15); color: #FF9500; }
 
+/* ── Price Chart ──────────────────────────── */
+.price-chart { padding: 120px 0; background: #050505; }
+.section-eyebrow {
+    display: inline-block;
+    padding: 4px 14px;
+    border-radius: 999px;
+    background: rgba(255, 149, 0, 0.12);
+    color: #FF9500;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+}
+.price-chart .container { text-align: center; }
+.price-chart .section-sub { margin-bottom: 56px; }
+.chart-landscape {
+    margin: 0 auto 64px;
+    max-width: 920px;
+    border-radius: 18px;
+    overflow: hidden;
+    border: 1px solid #1C1C1E;
+    box-shadow:
+        0 30px 80px -20px rgba(255, 149, 0, 0.18),
+        0 8px 24px -8px rgba(0, 0, 0, 0.6);
+    background: #000;
+    transition: border-color 0.3s, transform 0.3s;
+}
+.chart-landscape:hover {
+    border-color: rgba(255, 149, 0, 0.3);
+    transform: translateY(-2px);
+}
+.chart-landscape img { width: 100%; display: block; }
+.chart-detail {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 64px;
+    align-items: center;
+    text-align: left;
+    max-width: 920px;
+    margin: 0 auto;
+}
+.chart-detail-text h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 24px;
+    letter-spacing: -0.01em;
+}
+.chart-detail-phone {
+    border-radius: 32px;
+    overflow: hidden;
+    border: 2px solid #1C1C1E;
+    max-width: 280px;
+    margin: 0 auto;
+    aspect-ratio: 9 / 19.5;
+    background: #000;
+    box-shadow: 0 20px 60px -20px rgba(0, 0, 0, 0.8);
+}
+.chart-detail-phone img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 /* ── Themes ───────────────────────────────── */
 .themes { padding: 120px 0; background: #0A0A0A; }
 .themes-grid {
@@ -303,6 +367,9 @@ img { max-width: 100%; display: block; }
     .features-grid { grid-template-columns: 1fr; }
     .themes-grid { grid-template-columns: repeat(2, 1fr); }
     .two-col { grid-template-columns: 1fr; }
+    .chart-detail { grid-template-columns: 1fr; gap: 40px; text-align: center; }
+    .chart-detail-text { max-width: 480px; margin: 0 auto; }
+    .chart-detail-text .check-list { text-align: left; }
     .showcase-grid { grid-template-columns: 1fr; }
     .showcase-grid-phones { grid-template-columns: repeat(2, 1fr); }
     .pricing-grid { grid-template-columns: 1fr; max-width: 400px; }
