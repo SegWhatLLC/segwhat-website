@@ -29,7 +29,7 @@
     <div class="container">
         <a href="/" class="back">&larr; Back to SegWhat.com</a>
         <h1>Privacy Policy</h1>
-        <p class="updated">Last updated: April 13, 2026</p>
+        <p class="updated">Last updated: May 11, 2026</p>
 
         <p>SegWhat LLC ("we", "us", "our") operates the BlockClock mobile application. This policy describes what
             information we collect, how we use it, and your choices.</p>
@@ -53,7 +53,11 @@
         <h2>BlockClock Cloud Mode</h2>
         <p>When using BlockClock Cloud, the app fetches Bitcoin network data (block height, difficulty, fee estimates,
             mempool status, and price) from our servers. These requests do not include any personally identifiable
-            information. Our servers do not log IP addresses or any data that could identify you.</p>
+            information, account identifiers, or device identifiers. While our servers necessarily receive IP
+            addresses as part of standard network communication, we do not retain access logs or associate any
+            request with an individual user. Any transient logs used for security and abuse prevention are not
+            retained beyond what is necessary to keep the service available, and are never combined with other
+            information to identify you.</p>
 
         <h2>Bitcoin News Feed</h2>
         <p>The news feed fetches headlines from public Bitcoin news sources. Tapping a headline opens the article in
@@ -67,7 +71,18 @@
         <h2>Widgets and Complications</h2>
         <p>Home screen widgets, lock screen widgets, and watch complications display cached Bitcoin data stored
             locally on your device. No network requests are made directly by widgets — they read data that the main
-            app has already fetched.</p>
+            app has already fetched. On iOS this includes Home Screen widgets, Lock Screen widgets, and Apple Watch
+            complications; on Android this includes home screen widgets. In both cases, widgets only read data that
+            the main app has already fetched and stored locally on your device.</p>
+
+        <h2>Apple Watch (App Store / iOS version only)</h2>
+        <p>This section applies only to the App Store (iOS) version of BlockClock. The Google Play (Android) version
+            does not include Apple Watch functionality and this section does not apply to Android users.</p>
+        <p>If you pair BlockClock with an Apple Watch, the iOS app can optionally sync your in-app settings and the
+            most recent cached Bitcoin data to your watch using Apple's WatchConnectivity framework. This sync
+            happens directly between your iPhone and your paired Apple Watch over the local connection Apple manages
+            between the two devices — no data passes through SegWhat servers, and no Apple Watch data is sent to us.
+            You can disable Apple Watch sync at any time from the app's Settings screen.</p>
 
         <h2>Data Storage</h2>
         <p>All app data (settings, cached network data, theme preferences) is stored locally on your device. If you
