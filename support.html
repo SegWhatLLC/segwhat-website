@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support — BlockClock</title>
+    <meta name="description"
+        content="Help and troubleshooting for BlockClock on iOS, Android, and Apple Watch. Node connection, widgets, complications, news, price charts, and more.">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #0A0A0A; color: #E5E5E5; line-height: 1.7;
+            padding: 60px 24px 96px;
+        }
+        .container { max-width: 760px; margin: 0 auto; }
+        h1 { font-size: 32px; color: #fff; margin-bottom: 8px; letter-spacing: -0.01em; }
+        .lead { font-size: 16px; color: #B5B5B5; margin-bottom: 32px; }
+        .updated { font-size: 13px; color: #8E8E93; margin-bottom: 48px; }
+        h2 {
+            font-size: 22px; color: #fff;
+            margin: 56px 0 18px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #1C1C1E;
+        }
+        h3 { font-size: 16px; color: #fff; margin: 24px 0 8px; }
+        p, li { font-size: 15px; color: #ccc; margin-bottom: 10px; }
+        ul, ol { padding-left: 24px; margin-bottom: 14px; }
+        li { margin-bottom: 6px; }
+        a { color: #FF9500; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        code, pre {
+            font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+            font-size: 13px; color: #FF9500;
+            background: #141416; padding: 2px 6px; border-radius: 4px;
+        }
+        pre {
+            display: block; padding: 12px 14px; margin: 10px 0 14px;
+            white-space: pre-wrap; word-wrap: break-word;
+        }
+        .back { display: inline-block; margin-bottom: 32px; font-size: 14px; color: #FF9500; }
+        .toc {
+            background: #111; border: 1px solid #1C1C1E;
+            border-radius: 12px; padding: 20px 24px;
+            margin-bottom: 24px;
+        }
+        .toc-title {
+            font-size: 12px; font-weight: 700; color: #8E8E93;
+            text-transform: uppercase; letter-spacing: 0.08em;
+            margin-bottom: 12px;
+        }
+        .toc-grid {
+            display: grid; grid-template-columns: 1fr 1fr; gap: 6px 24px;
+        }
+        .toc a { font-size: 14px; color: #E5E5E5; }
+        .toc a:hover { color: #FF9500; text-decoration: none; }
+        .contact-box {
+            background: #111; border: 1px solid rgba(255, 149, 0, 0.2);
+            border-radius: 12px; padding: 24px 28px;
+            margin: 48px 0 24px;
+        }
+        .contact-box h2 { margin-top: 0; border-bottom: none; padding-bottom: 0; }
+        .contact-email {
+            display: inline-block; margin-top: 8px;
+            font-size: 18px; font-weight: 600;
+        }
+        .note {
+            background: rgba(255, 149, 0, 0.06);
+            border-left: 3px solid #FF9500;
+            padding: 10px 16px;
+            margin: 12px 0 18px;
+            font-size: 14px; color: #B5B5B5;
+        }
+        @media (max-width: 540px) {
+            .toc-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <a href="/" class="back">&larr; Back to SegWhat.com</a>
+        <h1>BlockClock Support</h1>
+        <p class="lead">Troubleshooting and help for BlockClock on iOS, Android, and Apple Watch.</p>
+        <p class="updated">Last updated: May 14, 2026</p>
+
+        <div class="toc">
+            <div class="toc-title">On this page</div>
+            <div class="toc-grid">
+                <a href="#contact">Contact us</a>
+                <a href="#getting-started">Getting started</a>
+                <a href="#cloud">BlockClock Cloud</a>
+                <a href="#own-node">Connecting your own node</a>
+                <a href="#widgets">Widgets &amp; complications</a>
+                <a href="#watch">Apple Watch</a>
+                <a href="#price">Price &amp; charts</a>
+                <a href="#news">News tab</a>
+                <a href="#education">Learn tab</a>
+                <a href="#settings">Settings &amp; data sources</a>
+                <a href="#privacy">Privacy &amp; data</a>
+                <a href="#donations">Donations &amp; tip jar</a>
+                <a href="#bugs">Bug reports &amp; feature requests</a>
+                <a href="#compatibility">Device &amp; OS compatibility</a>
+                <a href="#install">Installing &amp; updates</a>
+                <a href="#uninstall">Uninstalling &amp; data removal</a>
+            </div>
+        </div>
+
+        <div class="contact-box" id="contact">
+            <h2 style="margin-top: 0;">Need a human?</h2>
+            <p>If your issue isn't covered below, or you'd just rather talk to us — email us. We read every message.</p>
+            <a href="mailto:info@segwhat.com?subject=BlockClock%20Support"
+                class="contact-email">info@segwhat.com</a>
+            <p style="margin-top: 16px; font-size: 13px; color: #8E8E93;">
+                When emailing, please include your device model, OS version, and a brief description of the
+                issue. Screenshots help.
+            </p>
+        </div>
+
+        <h2 id="getting-started">Getting started</h2>
+
+        <h3>What is BlockClock?</h3>
+        <p>BlockClock is a free Bitcoin network dashboard for iPhone, Apple Watch, Android, and home-screen
+            widgets. It shows live block height, fee estimates, mempool depth, BTC price (with 24h/7d/30d/1y
+            charts), halving countdown, supply progress, and a curated news feed. You can use it with BlockClock
+            Cloud (zero setup, free) or by plugging in your own Bitcoin Core / Knots node.</p>
+
+        <h3>How do I open the app for the first time?</h3>
+        <p>On first launch, BlockClock asks whether you want to use BlockClock Cloud or connect your own node.
+            You can change this choice any time in <strong>Settings → Data Source</strong>.</p>
+
+        <h3>Do I need an account?</h3>
+        <p>No. BlockClock works without any account, sign-up, or login.</p>
+
+        <h2 id="cloud">BlockClock Cloud</h2>
+
+        <h3>What is BlockClock Cloud?</h3>
+        <p>A free read-only Bitcoin data service we operate. It pulls live data from public Bitcoin sources
+            and serves it to the app so you can use BlockClock without running your own node. No account
+            required.</p>
+
+        <h3>Cloud data isn't loading</h3>
+        <p>If you see an error or stale data:</p>
+        <ol>
+            <li>Check your internet connection.</li>
+            <li>Tap the refresh icon in the top-right of the dashboard.</li>
+            <li>Open <strong>Settings</strong> and confirm <strong>Data Source</strong> is set to
+                <strong>BlockClock Cloud</strong>.</li>
+            <li>Force-quit and reopen the app.</li>
+        </ol>
+        <p>If the issue persists for more than a few minutes, our service may be experiencing a brief
+            interruption — try again in 5–10 minutes, or <a href="#contact">contact us</a>.</p>
+
+        <h2 id="own-node">Connecting your own node</h2>
+
+        <h3>What node software is supported?</h3>
+        <p>Any Bitcoin node that exposes a standard JSON-RPC interface — <strong>Bitcoin Core</strong>,
+            <strong>Bitcoin Knots</strong>, and most Core-derived implementations. The app uses
+            <code>getblockchaininfo</code>, <code>getmempoolinfo</code>, <code>estimatesmartfee</code>, and
+            similar standard RPC calls.</p>
+
+        <h3>How do I find my node's address and credentials?</h3>
+        <p>Your node's RPC settings live in its <code>bitcoin.conf</code> file. The relevant lines are:</p>
+        <pre>rpcuser=&lt;your-username&gt;
+rpcpassword=&lt;your-password&gt;
+rpcallowip=192.168.0.0/16   # or wherever your phone connects from
+rpcbind=0.0.0.0
+server=1</pre>
+        <p>The default RPC port is <code>8332</code> for mainnet, <code>18332</code> for testnet. Use your
+            node's LAN IP (e.g. <code>192.168.1.117</code>) — not <code>127.0.0.1</code>, which only works
+            on the node itself.</p>
+
+        <h3>I see "Connection failed" or "Connection timed out"</h3>
+        <p>Common causes, in order of likelihood:</p>
+        <ul>
+            <li><strong>Wrong host or port.</strong> Verify in Settings.</li>
+            <li><strong>Your phone isn't on the same network as your node.</strong> Both must be on the same
+                LAN, or you need a VPN / Tailscale tunnel to your home network.</li>
+            <li><strong>Firewall blocking port 8332.</strong> Allow incoming connections on your node's
+                machine.</li>
+            <li><strong><code>rpcallowip</code> doesn't include your phone's subnet.</strong> Most home
+                networks use <code>192.168.x.x</code> or <code>10.0.x.x</code>.</li>
+            <li><strong><code>rpcbind</code> is missing or set to <code>127.0.0.1</code>.</strong> Set it to
+                <code>0.0.0.0</code> (or your node's LAN IP) so it accepts external connections.</li>
+            <li><strong>Node isn't running</strong> or is mid-sync (you'll see <em>initial block download</em>
+                state).</li>
+        </ul>
+
+        <h3>I see "Authentication failed" / HTTP 401</h3>
+        <p>The RPC username or password in Settings doesn't match what's in your node's
+            <code>bitcoin.conf</code>. If you've recently rotated credentials, update both sides. Whitespace
+            in fields is a common cause.</p>
+
+        <h3>Can I use BlockClock with Tor or Tailscale?</h3>
+        <p>Yes. BlockClock connects to whatever host/port you give it, so any VPN, mesh network, or tunneling
+            solution that exposes your node's RPC port to your phone works. Tailscale's Magic DNS hostnames
+            (e.g. <code>node.tailnet-name.ts.net</code>) are supported.</p>
+
+        <h3>Can I use HTTPS / a self-signed cert?</h3>
+        <p>Plain HTTP to your node over your private network is supported. HTTPS with a publicly-trusted
+            certificate is supported. Self-signed certificates are not currently supported.</p>
+
+        <h2 id="widgets">Widgets &amp; complications</h2>
+
+        <h3>How do I add a widget?</h3>
+        <p><strong>iOS:</strong> long-press on the home screen → tap the <strong>+</strong> in the top-left
+            → search "BlockClock" → choose your widget size and tap <strong>Add Widget</strong>.</p>
+        <p><strong>Android:</strong> long-press an empty area of the home screen → <strong>Widgets</strong>
+            → scroll to "BlockClock" → drag the widget you want to your home screen.</p>
+
+        <h3>What widgets are available?</h3>
+        <ul>
+            <li><strong>BTC Price</strong> — current BTC price in your selected currency</li>
+            <li><strong>Block Height</strong> — current chain tip</li>
+            <li><strong>BTC Remaining</strong> — percentage of 21M mined</li>
+            <li><strong>Halving Countdown</strong> — progress to the next halving</li>
+            <li><strong>Fee Estimates</strong> — recommended sat/vB tiers</li>
+        </ul>
+
+        <h3>My widgets are showing wrong or stale data</h3>
+        <p>This is usually one of two things:</p>
+        <ol>
+            <li><strong>The system hasn't refreshed them recently.</strong> Open the app — BlockClock forces
+                a refresh whenever you launch it. After about a minute, the home-screen widgets should be
+                up to date.</li>
+            <li><strong>The OS killed the background refresh.</strong> Some launchers (especially Samsung's
+                One UI with "Sleeping Apps") aggressively suspend background tasks. Go to your phone's
+                <strong>Settings → Apps → BlockClock → Battery</strong> and set it to "Unrestricted." On
+                Samsung also check <strong>Device Care → Battery → Apps that won't be put to sleep</strong>
+                and add BlockClock.</li>
+        </ol>
+
+        <h3>All my widgets look the same / show the wrong widget type</h3>
+        <p>Some launchers cache widget views and occasionally render a stale view. Workaround: long-press
+            the misbehaving widget, <strong>Remove</strong> it, then add it again from the widget picker.
+            If the problem recurs, <a href="#contact">contact us</a> with your device model and OS version
+            — we're actively investigating launcher-specific cases.</p>
+
+        <h3>How often do widgets update?</h3>
+        <p>BlockClock asks the OS to refresh widgets every 15 minutes (the system minimum on both iOS and
+            Android). The OS schedules the actual updates based on battery, network, and recent usage. Opening
+            the app forces an immediate refresh.</p>
+
+        <h2 id="watch">Apple Watch</h2>
+
+        <h3>How do I install the Watch app?</h3>
+        <p>The Watch app installs automatically when you install BlockClock on a paired iPhone. If it
+            doesn't appear, open the <strong>Watch</strong> app on iPhone → scroll to BlockClock under
+            "Available Apps" → tap <strong>Install</strong>.</p>
+
+        <h3>How do I add a Watch complication?</h3>
+        <p>Long-press your watch face → tap <strong>Edit</strong> → swipe to the complications screen →
+            tap a slot → scroll to <strong>BlockClock</strong> → choose a complication type.</p>
+
+        <h3>The Watch isn't showing live data</h3>
+        <p>The Watch app fetches data the same way the phone does — through BlockClock Cloud or your own
+            node. If the phone works but the Watch doesn't:</p>
+        <ul>
+            <li>Make sure your Watch can reach the internet (over Wi-Fi, the iPhone connection, or cellular
+                if you have a cellular Watch).</li>
+            <li>If using your own node, your Watch must be able to reach your node's IP — typically via the
+                paired iPhone's Wi-Fi or a VPN configured on the Watch.</li>
+            <li>Force-relaunch the Watch app (Digital Crown twice, swipe BlockClock up, then reopen).</li>
+        </ul>
+
+        <h2 id="price">Price &amp; charts</h2>
+
+        <h3>What currencies are supported?</h3>
+        <p>USD, EUR, GBP, CAD, AUD, JPY, and CHF. Change in <strong>Settings → Currency</strong>.</p>
+
+        <h3>How do I see the price chart?</h3>
+        <p>Tap the BTC price anywhere on the dashboard. A chart opens with 24-hour, 7-day, 30-day, and
+            1-year ranges. On iPhone, rotate to landscape for a full-width chart.</p>
+
+        <h3>The price hasn't updated in a while</h3>
+        <p>BlockClock refreshes the price on the interval you chose in Settings (default: every 5 minutes).
+            You can force an immediate refresh from the dashboard's refresh button. The data source is
+            Kraken, served through our cache layer.</p>
+
+        <h2 id="news">News tab</h2>
+
+        <h3>Where do the news articles come from?</h3>
+        <p>BlockClock aggregates the public RSS feeds of CoinDesk, Bitcoin Magazine, Bitcoin.com News,
+            Decrypt, and The Block. Tapping any article opens it on the publisher's own website in your
+            browser — we don't reproduce article text in the app.</p>
+
+        <h3>News is empty / not loading</h3>
+        <p>Check your internet connection and pull-to-refresh the News tab. If still empty, force-quit and
+            reopen the app. If the issue persists, <a href="#contact">contact us</a>.</p>
+
+        <h3>How fresh is the news feed?</h3>
+        <p>Our aggregator refreshes from each publisher every 15 minutes. Items show "X min ago" relative
+            to publication time.</p>
+
+        <h2 id="education">Learn tab</h2>
+
+        <h3>What's in the Learn tab?</h3>
+        <p>A curated list of Bitcoin podcasts, educators, and resources for newcomers and experienced
+            users alike. Tapping any item opens the source on their website. We don't host the content —
+            we just point at it.</p>
+
+        <h2 id="settings">Settings &amp; data sources</h2>
+
+        <h3>How do I switch between BlockClock Cloud and my own node?</h3>
+        <p>Open <strong>Settings</strong> from the gear icon at the top of the dashboard, then choose your
+            data source under <strong>Data Source</strong>. The change is immediate — no restart needed.</p>
+
+        <h3>How do I change the refresh interval?</h3>
+        <p>Settings → <strong>Refresh interval</strong>. Options are 1, 2, 5, 10, 15, 30, and 60 minutes.
+            Shorter intervals use more battery and bandwidth.</p>
+
+        <h3>How do I reset to defaults?</h3>
+        <p>On iOS: delete and reinstall the app (no account to lose). On Android: <strong>Settings →
+                Apps → BlockClock → Storage → Clear Data</strong>, or delete and reinstall.</p>
+
+        <h2 id="privacy">Privacy &amp; data</h2>
+
+        <h3>What data do you collect?</h3>
+        <p>None that identifies you. We don't have accounts, analytics, advertising IDs, or tracking. See
+            our full <a href="/privacy.html">privacy policy</a>.</p>
+
+        <h3>Where does my node's data go?</h3>
+        <p>In Own Node mode, your node's data travels only between your phone and your node. It does not
+            pass through our servers.</p>
+
+        <h3>Is my node's password safe?</h3>
+        <p>Your RPC credentials are stored only on your device, in the iOS/Android keychain or its
+            equivalent. They're never transmitted to us.</p>
+
+        <h2 id="donations">Donations &amp; tip jar</h2>
+
+        <h3>Is BlockClock free?</h3>
+        <p>Yes. The full app — Cloud mode, own-node mode, watch app, widgets, charts, news — is free,
+            with no paywall and no advertising. If you'd like to support development, there's an optional
+            tip jar in Settings.</p>
+
+        <h3>How does the tip jar work?</h3>
+        <p>You can buy us a coffee in the app via standard App Store / Play Store in-app purchases.
+            Payments are handled by Apple or Google. SegWhat LLC receives the proceeds (after store
+            fees). No subscription, no recurring charges — tip once or as many times as you like.</p>
+
+        <h3>Will there be a paid subscription?</h3>
+        <p>Not at launch. If we ever introduce paid features, the existing free functionality will stay
+            free.</p>
+
+        <h2 id="bugs">Bug reports &amp; feature requests</h2>
+
+        <h3>I found a bug — how do I report it?</h3>
+        <p>Email <a href="mailto:info@segwhat.com?subject=BlockClock%20Bug%20Report">info@segwhat.com</a>
+            with:</p>
+        <ul>
+            <li>Device model (e.g. iPhone 15 Pro, Samsung Galaxy S24)</li>
+            <li>OS version (iOS 17.5, Android 14, watchOS 10.4)</li>
+            <li>App version (find in Settings → About)</li>
+            <li>What you were doing when it happened</li>
+            <li>Screenshots or screen recordings if relevant</li>
+        </ul>
+
+        <h3>I have a feature idea</h3>
+        <p>We'd love to hear it. Email <a href="mailto:info@segwhat.com?subject=BlockClock%20Feature%20Request">info@segwhat.com</a>
+            with your idea. We can't promise to ship everything, but we read everything.</p>
+
+        <h2 id="compatibility">Device &amp; OS compatibility</h2>
+        <ul>
+            <li><strong>iPhone:</strong> iOS 17.0 or later</li>
+            <li><strong>Apple Watch:</strong> watchOS 10.0 or later, paired with a supported iPhone</li>
+            <li><strong>Android:</strong> Android 8.0 (API 26) or later</li>
+            <li><strong>iPad:</strong> runs in iPhone-compatibility mode on iPadOS 17 or later</li>
+        </ul>
+
+        <h2 id="install">Installing &amp; updates</h2>
+
+        <h3>Where do I download BlockClock?</h3>
+        <p>iOS: the <a href="https://apps.apple.com/app/blockclock/" target="_blank" rel="noopener">App
+                Store</a>. Android: <a
+                href="https://play.google.com/store/apps/details?id=io.segwhat.blockclock" target="_blank"
+                rel="noopener">Google Play</a>.</p>
+
+        <h3>How do I update?</h3>
+        <p>Updates ship through the App Store / Play Store like any other app. Most devices auto-update;
+            you can also manually check for updates in the store.</p>
+
+        <h3>How do I know what version I'm running?</h3>
+        <p>Open <strong>Settings → About</strong> inside the app.</p>
+
+        <h2 id="uninstall">Uninstalling &amp; data removal</h2>
+
+        <h3>How do I uninstall BlockClock?</h3>
+        <p><strong>iOS:</strong> long-press the app icon → <strong>Remove App → Delete App</strong>. This
+            also removes the Watch app on the paired Apple Watch.</p>
+        <p><strong>Android:</strong> long-press the app icon → <strong>Uninstall</strong>, or via
+            <strong>Settings → Apps → BlockClock → Uninstall</strong>.</p>
+
+        <h3>What happens to my data when I uninstall?</h3>
+        <p>All locally-stored data (your node settings, currency choice, refresh interval) is deleted
+            along with the app. We don't retain any server-side records of you in the first place, so
+            there's nothing for us to delete.</p>
+
+        <div class="contact-box" style="margin-top: 64px;">
+            <h2 style="margin-top: 0;">Still stuck?</h2>
+            <p>Send us an email and we'll get back to you.</p>
+            <a href="mailto:info@segwhat.com?subject=BlockClock%20Support"
+                class="contact-email">info@segwhat.com</a>
+        </div>
+    </div>
+</body>
+
+</html>
