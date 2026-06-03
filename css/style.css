@@ -149,7 +149,7 @@ img { max-width: 100%; display: block; }
 
 /* ── Features ────────────────────────────── */
 .features { padding: 120px 0; }
-.features h2, .themes h2, .how-it-works h2, .showcase h2, .pricing h2, .download h2 {
+.features h2, .themes h2, .how-it-works h2, .showcase h2, .pricing h2, .download h2, .about h2 {
     font-size: clamp(28px, 4vw, 44px); font-weight: 800; text-align: center;
     letter-spacing: -0.02em; margin-bottom: 12px;
 }
@@ -341,6 +341,12 @@ img { max-width: 100%; display: block; }
 .store-badge { display: inline-block; transition: transform 0.2s; }
 .store-badge:hover { transform: translateY(-2px); }
 .store-svg { height: 48px; width: auto; }
+
+.about { padding: 100px 0; text-align: center; background: #0A0A0A; }
+.about .section-sub { font-size: 18px; max-width: 680px; margin-bottom: 20px; }
+.about .section-sub:last-of-type { margin-bottom: 0; }
+.about .section-sub a { color: #FF9500; }
+.about .section-sub a:hover { text-decoration: underline; }
 
 /* ── Footer ───────────────────────────────── */
 .footer {
