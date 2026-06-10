@@ -149,7 +149,7 @@ img { max-width: 100%; display: block; }
 
 /* ── Features ────────────────────────────── */
 .features { padding: 120px 0; }
-.features h2, .themes h2, .how-it-works h2, .showcase h2, .pricing h2, .download h2, .about h2 {
+.features h2, .themes h2, .education h2, .how-it-works h2, .showcase h2, .pricing h2, .download h2, .about h2 {
     font-size: clamp(28px, 4vw, 44px); font-weight: 800; text-align: center;
     letter-spacing: -0.02em; margin-bottom: 12px;
 }
@@ -182,6 +182,11 @@ img { max-width: 100%; display: block; }
 }
 .tag-free { background: rgba(52, 199, 89, 0.15); color: #34C759; }
 .tag-cloud { background: rgba(255, 149, 0, 0.15); color: #FF9500; }
+
+/* ── Curated Bitcoin Education ────────────── */
+.education { padding: 120px 0; }
+.education-cta { text-align: center; margin-top: 48px; }
+.education-cta p { color: #8E8E93; font-size: 15px; margin-bottom: 20px; }
 
 /* ── Price Chart ──────────────────────────── */
 .price-chart { padding: 120px 0; background: #050505; }

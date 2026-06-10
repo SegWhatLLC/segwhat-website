@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support SegWhat — Bitcoin &amp; Lightning Donations</title>
+    <meta name="description"
+        content="SegWhat is free, forever. If it earns its place on your home screen, drop us some sats over Lightning or on-chain to keep the cloud servers running.">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #0A0A0A; color: #E5E5E5; line-height: 1.7;
+            padding: 60px 24px 96px;
+        }
+        .container { max-width: 760px; margin: 0 auto; }
+        .back { display: inline-block; margin-bottom: 32px; font-size: 14px; color: #FF9500; text-decoration: none; }
+        .back:hover { text-decoration: underline; }
+        h1 { font-size: 34px; color: #fff; margin-bottom: 10px; letter-spacing: -0.01em; }
+        .lead { font-size: 16px; color: #B5B5B5; margin-bottom: 14px; }
+        .v4v {
+            display: inline-block; font-size: 12px; font-weight: 700; letter-spacing: 0.08em;
+            text-transform: uppercase; color: #FF9500;
+            background: rgba(255, 149, 0, 0.08); border: 1px solid rgba(255, 149, 0, 0.25);
+            padding: 5px 12px; border-radius: 999px; margin-bottom: 40px;
+        }
+        .cards { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 8px 0 40px; }
+        @media (max-width: 620px) { .cards { grid-template-columns: 1fr; } }
+        .card {
+            background: #111; border: 1px solid #1C1C1E; border-radius: 16px;
+            padding: 28px 24px; text-align: center;
+        }
+        .card.featured { border-color: rgba(255, 149, 0, 0.35); }
+        .card-eyebrow {
+            font-size: 12px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;
+            color: #8E8E93; margin-bottom: 4px;
+        }
+        .card h2 { font-size: 20px; color: #fff; margin-bottom: 4px; }
+        .card .sub { font-size: 13px; color: #8E8E93; margin-bottom: 20px; }
+        .qr-wrap {
+            background: #0A0A0A; border: 1px solid #1C1C1E; border-radius: 14px;
+            padding: 14px; display: inline-block; margin-bottom: 18px;
+        }
+        .qr-wrap img { display: block; width: 200px; height: 200px; border-radius: 6px; }
+        .addr-row {
+            display: flex; align-items: stretch; gap: 0;
+            background: #0A0A0A; border: 1px solid #1C1C1E; border-radius: 10px; overflow: hidden;
+        }
+        .addr {
+            flex: 1; font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+            font-size: 12px; color: #E5E5E5; padding: 11px 12px;
+            white-space: nowrap; overflow-x: auto; text-align: left;
+        }
+        .copy-btn {
+            border: none; background: #FF9500; color: #0A0A0A;
+            font-weight: 700; font-size: 13px; padding: 0 16px; cursor: pointer;
+            transition: background 0.15s;
+        }
+        .copy-btn:hover { background: #ffab33; }
+        .copy-btn.copied { background: #34C759; color: #fff; }
+        .open-link {
+            display: inline-block; margin-top: 14px; font-size: 13px;
+            color: #FF9500; text-decoration: none;
+        }
+        .open-link:hover { text-decoration: underline; }
+        .pending {
+            font-size: 12px; color: #8E8E93; margin-top: 14px; font-style: italic;
+        }
+        .why {
+            background: rgba(255, 149, 0, 0.06); border-left: 3px solid #FF9500;
+            border-radius: 0 10px 10px 0; padding: 18px 22px; margin: 8px 0 32px;
+        }
+        .why p { font-size: 14px; color: #C9C9C9; margin: 0; }
+        .footnote { font-size: 13px; color: #8E8E93; text-align: center; margin-top: 8px; }
+        .footnote a { color: #FF9500; text-decoration: none; }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <a href="/" class="back">&larr; Back to SegWhat.com</a>
+
+        <h1>Support SegWhat</h1>
+        <p class="lead">SegWhat is free, forever — no paywall, no ads, no tracking. If it's earned a spot on your
+            home screen, you can throw some sats our way to help keep the cloud servers running.</p>
+        <span class="v4v">⚡ Value for Value</span>
+
+        <div class="cards">
+            <!-- Lightning -->
+            <div class="card featured">
+                <div class="card-eyebrow">⚡ Lightning</div>
+                <h2>Zap us sats</h2>
+                <p class="sub">Fast, cheap, instant. The Bitcoiner's tip jar.</p>
+                <div class="qr-wrap">
+                    <img src="images/donate-lightning.png" alt="Lightning donation QR code">
+                </div>
+                <div class="addr-row">
+                    <span class="addr" id="ln-addr">tips@segwhat.com</span>
+                    <button class="copy-btn" data-copy="ln-addr">Copy</button>
+                </div>
+                <a class="open-link" href="lightning:tips@segwhat.com">Open in Lightning wallet →</a>
+                <p class="pending" id="ln-pending">Lightning Address goes live once our node's BTCPay server is
+                    up — see note below.</p>
+            </div>
+
+            <!-- On-chain -->
+            <div class="card">
+                <div class="card-eyebrow">⛓ On-chain</div>
+                <h2>Send BTC</h2>
+                <p class="sub">For larger gifts or cold-storage sends.</p>
+                <div class="qr-wrap">
+                    <img src="images/donate-onchain.png" alt="On-chain Bitcoin donation QR code">
+                </div>
+                <div class="addr-row">
+                    <span class="addr" id="oc-addr">bc1qzey6j7q9wppzawvc524u2d076waf3zpqxtf055</span>
+                    <button class="copy-btn" data-copy="oc-addr">Copy</button>
+                </div>
+                <a class="open-link"
+                    href="bitcoin:bc1qzey6j7q9wppzawvc524u2d076waf3zpqxtf055?label=SegWhat%20Donation">Open in
+                    wallet →</a>
+            </div>
+        </div>
+
+        <div class="why">
+            <p><strong>Why donations?</strong> We're Bitcoiners building tools for the community. The app is
+                100% free and always will be — your sats don't unlock anything, they just keep the SegWhat Cloud
+                servers running and the lights on so we can keep shipping. No tip is too small. 21 sats or 21k,
+                we appreciate every one. 🧡</p>
+        </div>
+
+        <p class="footnote">Prefer to help another way? <a href="mailto:info@segwhat.com">Email us</a> ·
+            Tell a fellow Bitcoiner · Leave an honest review on the
+            <a href="https://apps.apple.com/us/app/blockclock-by-segwhat/id6767312694">App Store</a> or
+            <a href="https://play.google.com/store/apps/details?id=io.segwhat.blockclock">Google Play</a>.</p>
+    </div>
+
+    <script>
+        document.querySelectorAll('.copy-btn').forEach(function (btn) {
+            btn.addEventListener('click', function () {
+                var text = document.getElementById(btn.dataset.copy).textContent.trim();
+                navigator.clipboard.writeText(text).then(function () {
+                    var orig = btn.textContent;
+                    btn.textContent = 'Copied';
+                    btn.classList.add('copied');
+                    setTimeout(function () {
+                        btn.textContent = orig;
+                        btn.classList.remove('copied');
+                    }, 1500);
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
