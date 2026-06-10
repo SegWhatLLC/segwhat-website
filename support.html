@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Support — BlockClock</title>
+    <title>Support — SegWhat</title>
     <meta name="description"
-        content="Help and troubleshooting for BlockClock on iOS, Android, and Apple Watch. Node connection, widgets, complications, news, price charts, and more.">
+        content="Help and troubleshooting for SegWhat on iOS, Android, and Apple Watch. Node connection, widgets, complications, news, price charts, and more.">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
@@ -81,8 +81,8 @@
 <body>
     <div class="container">
         <a href="/" class="back">&larr; Back to SegWhat.com</a>
-        <h1>BlockClock Support</h1>
-        <p class="lead">Troubleshooting and help for BlockClock on iOS, Android, and Apple Watch.</p>
+        <h1>SegWhat Support</h1>
+        <p class="lead">Troubleshooting and help for SegWhat on iOS, Android, and Apple Watch.</p>
         <p class="updated">Last updated: May 14, 2026</p>
 
         <div class="toc">
@@ -90,7 +90,7 @@
             <div class="toc-grid">
                 <a href="#contact">Contact us</a>
                 <a href="#getting-started">Getting started</a>
-                <a href="#cloud">BlockClock Cloud</a>
+                <a href="#cloud">SegWhat Cloud</a>
                 <a href="#own-node">Connecting your own node</a>
                 <a href="#widgets">Widgets &amp; complications</a>
                 <a href="#watch">Apple Watch</a>
@@ -110,7 +110,7 @@
         <div class="contact-box" id="contact">
             <h2 style="margin-top: 0;">Need a human?</h2>
             <p>If your issue isn't covered below, or you'd just rather talk to us — email us. We read every message.</p>
-            <a href="mailto:info@segwhat.com?subject=BlockClock%20Support"
+            <a href="mailto:info@segwhat.com?subject=SegWhat%20Support"
                 class="contact-email">info@segwhat.com</a>
             <p style="margin-top: 16px; font-size: 13px; color: #8E8E93;">
                 When emailing, please include your device model, OS version, and a brief description of the
@@ -120,24 +120,24 @@
 
         <h2 id="getting-started">Getting started</h2>
 
-        <h3>What is BlockClock?</h3>
-        <p>BlockClock is a free Bitcoin network dashboard for iPhone, Apple Watch, Android, and home-screen
+        <h3>What is SegWhat?</h3>
+        <p>SegWhat is a free Bitcoin network dashboard for iPhone, Apple Watch, Android, and home-screen
             widgets. It shows live block height, fee estimates, mempool depth, BTC price (with 24h/7d/30d/1y
-            charts), halving countdown, supply progress, and a curated news feed. You can use it with BlockClock
+            charts), halving countdown, supply progress, and a curated news feed. You can use it with SegWhat
             Cloud (zero setup, free) or by plugging in your own Bitcoin Core / Knots node.</p>
 
         <h3>How do I open the app for the first time?</h3>
-        <p>On first launch, BlockClock asks whether you want to use BlockClock Cloud or connect your own node.
+        <p>On first launch, SegWhat asks whether you want to use SegWhat Cloud or connect your own node.
             You can change this choice any time in <strong>Settings → Data Source</strong>.</p>
 
         <h3>Do I need an account?</h3>
-        <p>No. BlockClock works without any account, sign-up, or login.</p>
+        <p>No. SegWhat works without any account, sign-up, or login.</p>
 
-        <h2 id="cloud">BlockClock Cloud</h2>
+        <h2 id="cloud">SegWhat Cloud</h2>
 
-        <h3>What is BlockClock Cloud?</h3>
+        <h3>What is SegWhat Cloud?</h3>
         <p>A free read-only Bitcoin data service we operate. It pulls live data from public Bitcoin sources
-            and serves it to the app so you can use BlockClock without running your own node. No account
+            and serves it to the app so you can use SegWhat without running your own node. No account
             required.</p>
 
         <h3>Cloud data isn't loading</h3>
@@ -146,7 +146,7 @@
             <li>Check your internet connection.</li>
             <li>Tap the refresh icon in the top-right of the dashboard.</li>
             <li>Open <strong>Settings</strong> and confirm <strong>Data Source</strong> is set to
-                <strong>BlockClock Cloud</strong>.</li>
+                <strong>SegWhat Cloud</strong>.</li>
             <li>Force-quit and reopen the app.</li>
         </ol>
         <p>If the issue persists for more than a few minutes, our service may be experiencing a brief
@@ -192,8 +192,8 @@ server=1</pre>
             <code>bitcoin.conf</code>. If you've recently rotated credentials, update both sides. Whitespace
             in fields is a common cause.</p>
 
-        <h3>Can I use BlockClock with Tor or Tailscale?</h3>
-        <p>Yes. BlockClock connects to whatever host/port you give it, so any VPN, mesh network, or tunneling
+        <h3>Can I use SegWhat with Tor or Tailscale?</h3>
+        <p>Yes. SegWhat connects to whatever host/port you give it, so any VPN, mesh network, or tunneling
             solution that exposes your node's RPC port to your phone works. Tailscale's Magic DNS hostnames
             (e.g. <code>node.tailnet-name.ts.net</code>) are supported.</p>
 
@@ -205,9 +205,9 @@ server=1</pre>
 
         <h3>How do I add a widget?</h3>
         <p><strong>iOS:</strong> long-press on the home screen → tap the <strong>+</strong> in the top-left
-            → search "BlockClock" → choose your widget size and tap <strong>Add Widget</strong>.</p>
+            → search "SegWhat" → choose your widget size and tap <strong>Add Widget</strong>.</p>
         <p><strong>Android:</strong> long-press an empty area of the home screen → <strong>Widgets</strong>
-            → scroll to "BlockClock" → drag the widget you want to your home screen.</p>
+            → scroll to "SegWhat" → drag the widget you want to your home screen.</p>
 
         <h3>What widgets are available?</h3>
         <ul>
@@ -221,14 +221,14 @@ server=1</pre>
         <h3>My widgets are showing wrong or stale data</h3>
         <p>This is usually one of two things:</p>
         <ol>
-            <li><strong>The system hasn't refreshed them recently.</strong> Open the app — BlockClock forces
+            <li><strong>The system hasn't refreshed them recently.</strong> Open the app — SegWhat forces
                 a refresh whenever you launch it. After about a minute, the home-screen widgets should be
                 up to date.</li>
             <li><strong>The OS killed the background refresh.</strong> Some launchers (especially Samsung's
                 One UI with "Sleeping Apps") aggressively suspend background tasks. Go to your phone's
-                <strong>Settings → Apps → BlockClock → Battery</strong> and set it to "Unrestricted." On
+                <strong>Settings → Apps → SegWhat → Battery</strong> and set it to "Unrestricted." On
                 Samsung also check <strong>Device Care → Battery → Apps that won't be put to sleep</strong>
-                and add BlockClock.</li>
+                and add SegWhat.</li>
         </ol>
 
         <h3>All my widgets look the same / show the wrong widget type</h3>
@@ -238,30 +238,30 @@ server=1</pre>
             — we're actively investigating launcher-specific cases.</p>
 
         <h3>How often do widgets update?</h3>
-        <p>BlockClock asks the OS to refresh widgets every 15 minutes (the system minimum on both iOS and
+        <p>SegWhat asks the OS to refresh widgets every 15 minutes (the system minimum on both iOS and
             Android). The OS schedules the actual updates based on battery, network, and recent usage. Opening
             the app forces an immediate refresh.</p>
 
         <h2 id="watch">Apple Watch</h2>
 
         <h3>How do I install the Watch app?</h3>
-        <p>The Watch app installs automatically when you install BlockClock on a paired iPhone. If it
-            doesn't appear, open the <strong>Watch</strong> app on iPhone → scroll to BlockClock under
+        <p>The Watch app installs automatically when you install SegWhat on a paired iPhone. If it
+            doesn't appear, open the <strong>Watch</strong> app on iPhone → scroll to SegWhat under
             "Available Apps" → tap <strong>Install</strong>.</p>
 
         <h3>How do I add a Watch complication?</h3>
         <p>Long-press your watch face → tap <strong>Edit</strong> → swipe to the complications screen →
-            tap a slot → scroll to <strong>BlockClock</strong> → choose a complication type.</p>
+            tap a slot → scroll to <strong>SegWhat</strong> → choose a complication type.</p>
 
         <h3>The Watch isn't showing live data</h3>
-        <p>The Watch app fetches data the same way the phone does — through BlockClock Cloud or your own
+        <p>The Watch app fetches data the same way the phone does — through SegWhat Cloud or your own
             node. If the phone works but the Watch doesn't:</p>
         <ul>
             <li>Make sure your Watch can reach the internet (over Wi-Fi, the iPhone connection, or cellular
                 if you have a cellular Watch).</li>
             <li>If using your own node, your Watch must be able to reach your node's IP — typically via the
                 paired iPhone's Wi-Fi or a VPN configured on the Watch.</li>
-            <li>Force-relaunch the Watch app (Digital Crown twice, swipe BlockClock up, then reopen).</li>
+            <li>Force-relaunch the Watch app (Digital Crown twice, swipe SegWhat up, then reopen).</li>
         </ul>
 
         <h2 id="price">Price &amp; charts</h2>
@@ -274,14 +274,14 @@ server=1</pre>
             1-year ranges. On iPhone, rotate to landscape for a full-width chart.</p>
 
         <h3>The price hasn't updated in a while</h3>
-        <p>BlockClock refreshes the price on the interval you chose in Settings (default: every 5 minutes).
+        <p>SegWhat refreshes the price on the interval you chose in Settings (default: every 5 minutes).
             You can force an immediate refresh from the dashboard's refresh button. The data source is
             Kraken, served through our cache layer.</p>
 
         <h2 id="news">News tab</h2>
 
         <h3>Where do the news articles come from?</h3>
-        <p>BlockClock aggregates the public RSS feeds of CoinDesk, Bitcoin Magazine, Bitcoin.com News,
+        <p>SegWhat aggregates the public RSS feeds of CoinDesk, Bitcoin Magazine, Bitcoin.com News,
             Decrypt, and The Block. Tapping any article opens it on the publisher's own website in your
             browser — we don't reproduce article text in the app.</p>
 
@@ -302,7 +302,7 @@ server=1</pre>
 
         <h2 id="settings">Settings &amp; data sources</h2>
 
-        <h3>How do I switch between BlockClock Cloud and my own node?</h3>
+        <h3>How do I switch between SegWhat Cloud and my own node?</h3>
         <p>Open <strong>Settings</strong> from the gear icon at the top of the dashboard, then choose your
             data source under <strong>Data Source</strong>. The change is immediate — no restart needed.</p>
 
@@ -312,7 +312,7 @@ server=1</pre>
 
         <h3>How do I reset to defaults?</h3>
         <p>On iOS: delete and reinstall the app (no account to lose). On Android: <strong>Settings →
-                Apps → BlockClock → Storage → Clear Data</strong>, or delete and reinstall.</p>
+                Apps → SegWhat → Storage → Clear Data</strong>, or delete and reinstall.</p>
 
         <h2 id="privacy">Privacy &amp; data</h2>
 
@@ -330,7 +330,7 @@ server=1</pre>
 
         <h2 id="donations">Donations &amp; tip jar</h2>
 
-        <h3>Is BlockClock free?</h3>
+        <h3>Is SegWhat free?</h3>
         <p>Yes. The full app — Cloud mode, own-node mode, watch app, widgets, charts, news — is free,
             with no paywall and no advertising. If you'd like to support development, there's an optional
             tip jar in Settings.</p>
@@ -347,7 +347,7 @@ server=1</pre>
         <h2 id="bugs">Bug reports &amp; feature requests</h2>
 
         <h3>I found a bug — how do I report it?</h3>
-        <p>Email <a href="mailto:info@segwhat.com?subject=BlockClock%20Bug%20Report">info@segwhat.com</a>
+        <p>Email <a href="mailto:info@segwhat.com?subject=SegWhat%20Bug%20Report">info@segwhat.com</a>
             with:</p>
         <ul>
             <li>Device model (e.g. iPhone 15 Pro, Samsung Galaxy S24)</li>
@@ -358,7 +358,7 @@ server=1</pre>
         </ul>
 
         <h3>I have a feature idea</h3>
-        <p>We'd love to hear it. Email <a href="mailto:info@segwhat.com?subject=BlockClock%20Feature%20Request">info@segwhat.com</a>
+        <p>We'd love to hear it. Email <a href="mailto:info@segwhat.com?subject=SegWhat%20Feature%20Request">info@segwhat.com</a>
             with your idea. We can't promise to ship everything, but we read everything.</p>
 
         <h2 id="compatibility">Device &amp; OS compatibility</h2>
@@ -371,7 +371,7 @@ server=1</pre>
 
         <h2 id="install">Installing &amp; updates</h2>
 
-        <h3>Where do I download BlockClock?</h3>
+        <h3>Where do I download SegWhat?</h3>
         <p>iOS: the <a href="https://apps.apple.com/us/app/blockclock-by-segwhat/id6767312694" target="_blank" rel="noopener">App
                 Store</a>. Android: <a
                 href="https://play.google.com/store/apps/details?id=io.segwhat.blockclock" target="_blank"
@@ -386,11 +386,11 @@ server=1</pre>
 
         <h2 id="uninstall">Uninstalling &amp; data removal</h2>
 
-        <h3>How do I uninstall BlockClock?</h3>
+        <h3>How do I uninstall SegWhat?</h3>
         <p><strong>iOS:</strong> long-press the app icon → <strong>Remove App → Delete App</strong>. This
             also removes the Watch app on the paired Apple Watch.</p>
         <p><strong>Android:</strong> long-press the app icon → <strong>Uninstall</strong>, or via
-            <strong>Settings → Apps → BlockClock → Uninstall</strong>.</p>
+            <strong>Settings → Apps → SegWhat → Uninstall</strong>.</p>
 
         <h3>What happens to my data when I uninstall?</h3>
         <p>All locally-stored data (your node settings, currency choice, refresh interval) is deleted
@@ -400,7 +400,7 @@ server=1</pre>
         <div class="contact-box" style="margin-top: 64px;">
             <h2 style="margin-top: 0;">Still stuck?</h2>
             <p>Send us an email and we'll get back to you.</p>
-            <a href="mailto:info@segwhat.com?subject=BlockClock%20Support"
+            <a href="mailto:info@segwhat.com?subject=SegWhat%20Support"
                 class="contact-email">info@segwhat.com</a>
         </div>
     </div>

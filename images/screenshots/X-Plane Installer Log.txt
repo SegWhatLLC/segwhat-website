@@ -1,0 +1,107 @@
+Installer log.txt for X-Plane Installer 5.2.1-r1 (cf1d738f5fd8a8f5740f775277d220cbff88f381)
+Compiled on Nov 23 2025 04:25:58
+Installer Started on Mon Mar  9 12:28:21 2026
+
+This log file is generated automatically by Laminar Research applications and contains diagnostics about your graphics hardware, installation, and any error conditions.
+If you need to contact tech support or file a bug, please send us this file. NOTE: this file is rewritten every time you start ANY of your X-System applications.
+
+macOS: Version 14.7.4 (Build 23H420)
+CPU type: Apple M1 Max - Speed: 0.0-0.4 GHz - Cores: 10 Bus speed (mhz): 0 RAM (MB): 32768
+
+X-System folder:'', case sensitive=0
+
+-------------------------------------------------------------------
+Application was launched with the following command line options...
+	'-path'
+	'SCU/Users/robmagee/X-Plane 12/X-Plane.app'
+-------------------------------------------------------------------
+
+0:00:00.000 I/GFX/MTL: Discovered Metal device: Apple M1 Max, Metal. Score: 1000
+0:00:00.000 I/GFX/MTL: 
+Selected device:
+Metal Device        : Apple M1 Max
+
+GPU family 1 v1     : 1	GPU family 1 v2     : 1	GPU family 1 v3     : 1	GPU family 1 v4     : 1	
+GPU family 2 v1     : 1	
+0:00:00.000 I/GFX: 
+anisotropic_avail   : 1	coarse_timer_avail  : 1	precise_timer_avail : 0	tess_avail          : 1	geom_avail          : 0	
+viewport_arr        : 1	layer_arr           : 1	native_reverse_z    : 1	has_reverse_z       : 1	
+persistent map      : 1	msaa shader write   : 0	shader float16      : 0	shader int16        : 1	
+rebar_avail         : 0	alpha_to_one_avail  : 1	msaa_storage_image_avail: 0	
+sparse bindings     : 0	sparse page size    : 0	
+max iso filtering   : 16
+max samples         : 2
+max texture size    : 16384 (hardware limit)
+max tex units       : 16
+
+This video card is bucketed as: Apple Silicon
+0:00:00.000 I/GFX: Diagnostics         : memory	
+Device memory       : 22906503168
+Host memory         : 0
+
+
+0:00:00.000 I/wmgr: Monitor 0: { 0, 0, 3840, 2160 }
+0:00:00.000 I/wmgr: Monitor 1: { -3084, 2160, 2056, 1329 }
+0:00:00.000 I/wmgr: Monitor 2: { -3840, 0, 3840, 2160 }
+CPU count        : 10
+0:00:00.000 I/GFX: Loaded mapping RESOURCE:legacy_flat_mapping.xsv with hash: eb29fdd6554f16d8e4efd4541dea72a
+0:00:00.000 I/GFX: Loaded archive RESOURCE:legacy_flat.xsa with hash: 9fdcf7b08f8acb661a25e6803af97b29
+0:00:00.000 I/GFX: Loaded mapping RESOURCE:legacy_depth_mapping.xsv with hash: 255fba8eb20b2dcc6a96ccb3c1d8dcf
+0:00:00.000 I/GFX: Loaded archive RESOURCE:legacy_depth.xsa with hash: 8250de8d7b9c687b57ccde8c2bfeda93
+0:00:00.000 I/GFX: Loaded mapping RESOURCE:font_mapping.xsv with hash: ee62dd7d11e3b973687d6ee045a9215d
+0:00:00.000 I/GFX: Loaded archive RESOURCE:font.xsa with hash: 9ef5a0ebf3c8929998a3ac1d877754a
+0:00:00.000 I/GFX: Loaded mapping RESOURCE:minify_mapping.xsv with hash: c6366ed1bdef73ec16ea1acb790
+0:00:00.000 I/GFX: Loaded archive RESOURCE:minify.xsa with hash: d6d74411ad4041615adede9a4ce1140
+0:00:00.000 I/GFX: Loaded mapping RESOURCE:gstack_mapping.xsv with hash: df3947beb02bf3aac2288aa9345eb6
+0:00:00.000 I/GFX: Loaded archive RESOURCE:gstack.xsa with hash: d7c1fd867ecdd224f8fc35ebbd611
+0:00:00.000 I/GFX: Loaded mapping RESOURCE:in_place_blur_mapping.xsv with hash: af9dc15925f6045a4fe7877f4215b49
+0:00:00.000 I/GFX: Loaded archive RESOURCE:in_place_blur.xsa with hash: c18539f5889cb161e5ab10298627219f
+0:00:00.000 I/GFX: Loaded mapping RESOURCE:single_pass_blur_mapping.xsv with hash: fbebedda6e8e322f3fc73a42b6f7ef6
+0:00:00.000 I/GFX: Loaded archive RESOURCE:single_pass_blur.xsa with hash: 3789a2747d45fdfdf3c8e5f8039eded
+WARNING: we are missing the texture: RESOURCE:new_HUD.png.
+os_dir_this_app       =/Users/robmagee/X-Plane 12/
+os_dir_desktop        =/Users/robmagee/Desktop/
+os_dir_definstall     =/Users/robmagee/
+os_dir_temp           =/var/folders/rz/y36vp6jd32s5kvgt9tzpckzc0000gn/T/
+os_dir_prefs          =/Users/robmagee/Library/Preferences/
+
+0:00:00.000 D/INS: Scripted start as: scenery update
+0:00:00.000 E/WEBSRV: Could not bind to port 8086
+0:00:00.000 E/SYS: MACIBM_alert: X-Plane could not start because port 8086 was unavailable!
+0:00:00.000 E/SYS: MACIBM_alert: Something else may be using this port or your firewall may be blocking it.
+0:00:00.000 E/SYS: MACIBM_alert: X-Plane will still function normally but web applications will not function properly.
+0:00:00.000 E/SYS: MACIBM_alert: 
+0:00:00.000 E/SYS: MACIBM_alert: /Users/administrator/.gitlab-runner/builds/5iac3Er_D/0/x-plane/design/source_code/core/web/xp_web_server.cpp:173
+0:00:02.667 E/SYS: +-------------------------------------------------------------------------------
+0:00:02.667 E/SYS: | X-Plane could not start because port 8086 was unavailable!
+0:00:02.667 E/SYS: | Something else may be using this port or your firewall may be blocking it.
+0:00:02.667 E/SYS: | X-Plane will still function normally but web applications will not function properly.
+0:00:02.667 E/SYS: | 
+0:00:02.667 E/SYS: | (xp_web_server.cpp:173)
+0:00:02.667 E/SYS: +-------------------------------------------------------------------------------
+0:00:02.667 I/WEBSRV: Port 55276 bound
+0:00:02.667 D/WIZ: Starting installer... opening wizard step "Main Menu - Web Update"
+0:00:02.671 I/DST: Updater selected installation /Users/robmagee/X-Plane 12/
+0:00:05.531 D/WIZ: Advancing from wizard step "Welcome" to "Pick Auth"
+0:00:08.597 D/WIZ: Advancing from wizard step "Pick Auth" to "Authentication"
+0:00:56.910 I/IDENT: Getting keystore from disk...
+0:00:56.931 I/IDENT: Accepting user
+0:00:57.695 I/IDENT: Getting certificate from disk...
+0:00:57.695 I/IDENT: Accepting receipt
+0:00:57.720 I/LOGIN: Offering XDD for adoption
+0:01:10.661 I/IDENT: Logging user out
+0:01:10.678 I/GUI: User logged out via main menu
+0:01:58.121 D/WIZ: Advancing from wizard step "Authentication" to "Pick Auth"
+0:02:00.267 D/WIZ: Advancing from wizard step "Pick Auth" to "Authentication"
+0:04:45.730 I/IDENT: Getting keystore from disk...
+0:04:45.750 I/IDENT: Accepting user
+0:04:46.295 I/IDENT: Getting certificate from disk...
+0:04:46.295 I/IDENT: x509 certificate not found
+0:04:46.295 I/IDENT: Certificate not found on disk!
+0:04:46.295 I/IDENT: Updating certificate cache from network...
+0:04:46.481 I/IDENT: Getting certificate from disk...
+0:04:46.481 I/IDENT: Accepting receipt
+0:04:46.507 I/LOGIN: Offering XDD for adoption
+0:12:24.769 I/IDENT: Logging user out
+0:12:24.786 I/GUI: User logged out via main menu
+Clean exit from threads.
